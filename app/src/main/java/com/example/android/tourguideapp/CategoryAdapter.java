@@ -14,19 +14,18 @@ public class CategoryAdapter extends FragmentPagerAdapter{
     }
 
     public Fragment getItem(int position){
-//        switch(position){
-//            case 0:
-//                return new NumbersFragment();
-//            case 1:
-//                return new FamilyFragment();
-//            case 2:
-//                return new ColorsFragment();
-//            case 3:
-//                return new PhrasesFragment();
-//            default:
-//                return null;
-//        }
-        return null;
+        switch(position){
+            case 0:
+                return new RestaurantsFragment();
+            case 1:
+                return new MuseumsFragment();
+            case 2:
+                return new LandmarksFragment();
+            case 3:
+                return new EventsFragment();
+            default:
+                return null;
+        }
     }
 
     @Override
